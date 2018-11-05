@@ -8,7 +8,7 @@ public class RestartAndQuit : MonoBehaviour {
 	public void RestartLevel ()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("RESTART");
+        SceneManager.LoadScene("GravityWorld");
     }
 
     public void QuitGame()
