@@ -43,7 +43,7 @@ public class Spawner : MonoBehaviour
         {
             float distanceToVictory = (victorySpawnPoint.position - spawnPoint.position).magnitude;
 
-            if (Mathf.Abs(distanceToVictory - planet.transform.lossyScale.x) < 0.5f)
+            if (Mathf.Abs(distanceToVictory - planet.transform.lossyScale.x) < 1f)
             {
                 Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
             }
